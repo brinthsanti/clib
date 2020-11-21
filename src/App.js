@@ -1,11 +1,9 @@
-import Accordion from './Accordion';
+import AccordionPanel from './AccordionPanel';
 
 function App() {
   return (
     <div className="App">
-      <Accordion title='Hello' content='content' show/>
-      {/* <Accordion title='Hello' content='content'/> */}
-
+      <AccordionPanel title='Hello' content='content' dynamicToggle={false}/>
     </div>
   );
 }

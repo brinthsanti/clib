@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class AccordionContent extends Component {
+class AccordionPanelContent extends Component {
     render() {
         const { show, content } = this.props;
         return (
@@ -14,4 +14,4 @@ class AccordionContent extends Component {
     }
 }
 
-export default AccordionContent;
+export default AccordionPanelContent;

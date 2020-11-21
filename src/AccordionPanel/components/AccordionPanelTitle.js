@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import rightArrow from '../assets/next.png';
 import downArrow from '../assets/arrow-down-sign-to-navigate.png';
 
-class AccordionTitle extends Component {
+class AccordionPanelTitle extends Component {
     render() {
         const { toggleHandler, show, title } = this.props;
         return (
@@ -14,4 +14,4 @@ class AccordionTitle extends Component {
     }
 }
 
-export default AccordionTitle;
+export default AccordionPanelTitle;

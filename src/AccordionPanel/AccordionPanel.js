@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import './accordion.scss';
 
 
-import AccordionContent from './components/AccordionContent';
-import AccordionTitle from './components/AccordionTitle';
+import AccordionPanelTitle from './components/AccordionPanelTitle';
+import AccordionPanelContent from './components/AccordionPanelContent';
 
-class Accordion extends Component {
+class AccordionPanel extends Component {
 
     constructor(props) {
         super(props);
@@ -29,11 +29,11 @@ class Accordion extends Component {
         const { title, content, dynamicToggle, show } = this.props;
         return (
             <div className="accordionContainer">
-                <AccordionTitle show={dynamicToggle ? show : showContent} title={title} toggleHandler={this.toggleShowContent}/>
-                <AccordionContent show={dynamicToggle ? show : showContent} content={content}/>
+                <AccordionPanelTitle show={dynamicToggle ? show : showContent} title={title} toggleHandler={this.toggleShowContent}/>
+                <AccordionPanelContent show={dynamicToggle ? show : showContent} content={content}/>
             </div>
         );
     }
 }
 
-export default Accordion;
+export default AccordionPanel;
