@@ -26,11 +26,11 @@ class Accordion extends Component {
 
     render() {
         const { showContent } = this.state;
-        const { title, content, } = this.props;
+        const { title, content, dynamicToggle, show } = this.props;
         return (
             <div className="accordionContainer">
-                <AccordionTitle show={showContent} title={title} toggleHandler={this.toggleShowContent}/>
-                <AccordionContent show={showContent} content={content}/>
+                <AccordionTitle show={dynamicToggle ? show : showContent} title={title} toggleHandler={this.toggleShowContent}/>
+                <AccordionContent show={dynamicToggle ? show : showContent} content={content}/>
             </div>
         );
     }
