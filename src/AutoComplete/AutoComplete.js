@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import "./AutoComplete.scss";
 
-const AutoComplete = ({ data }) => {
+const AutoComplete = ({ data, render }) => {
   const [inputValue, setInputValue] = useState('');
   const [dropDownValues, setDropDownValue] = useState([]);
 
@@ -32,7 +32,8 @@ const AutoComplete = ({ data }) => {
   return (
     <div className="AutoComplete">
       <div className="selectedItem__container">
-        <input onChange={handleInputChange} value={inputValue}></input>
+        {/* <input onChange={handleInputChange} value={inputValue}></input> */}
+        {render(inputValue, handleInputChange)}
         <div className="listItem__container" onClick={handleListItemClick}>
           {
             dropDownValues && dropDownValues.map((val) => {

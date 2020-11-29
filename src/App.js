@@ -32,7 +32,11 @@ function App() {
   return (
     <div className="App">
     <div className="container">
-    <AutoComplete data={test} />
+    <AutoComplete data={test} render={
+      (inputValue, handleInputChange)=>{
+        return <input onChange={handleInputChange} value={inputValue}></input>
+      }
+    }/>
     </div>
     <p>test paragraph</p>
     </div>
