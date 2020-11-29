@@ -1,37 +1,40 @@
-import Accordion from './Accordion';
+import AutoComplete from './AutoComplete';
 
+import './App.scss';
 const test = [
-  {
-    title: 'Test1',
-    content: 'Content 1'
-  },
-  {
-    title: 'Test2',
-    content: 'Content 2'
-  },
-  {
-    title: 'Test3',
-    content: 'Content 3'
-  },
-  {
-    title: 'Test4',
-    content: 'Content 4'
-  },
-  {
-    title: 'Test5',
-    content: 'Content 5'
-  },
-  {
-    title: 'Test6',
-    content: 'Content 6'
-  }
+  "ActionScript",
+  "AppleScript",
+  "Asp",
+  "BASIC",
+  "C",
+  "C++",
+  "Clojure",
+  "COBOL",
+  "ColdFusion",
+  "Erlang",
+  "Fortran",
+  "Groovy",
+  "Haskell",
+  "Java",
+  "JavaScript",
+  "Lisp",
+  "Perl",
+  "PHP",
+  "Python",
+  "Ruby",
+  "Scala",
+  "Scheme",
+  'Brinth',
+  'santi',
 ];
 
 function App() {
   return (
     <div className="App">
-      {/* <AccordionPanel title='Hello' content='content' dynamicToggle={false}/> */}
-      <Accordion data={test} />
+    <div className="container">
+    <AutoComplete data={test} />
+    </div>
+    <p>test paragraph</p>
     </div>
   );
 }

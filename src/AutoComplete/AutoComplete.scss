@@ -1,0 +1,18 @@
+.AutoComplete {
+    .selectedItem__container{
+        background: #e8e1e1;
+        position: relative;
+        .listItem__container {
+           position: absolute;
+           background: #e8e1e1;
+           max-height: 200px;
+           overflow-y: scroll;
+           width: 100%;
+            .listItem:hover {
+              background-color: gray;
+              cursor: pointer;
+            }
+          }
+    }
+
+}
