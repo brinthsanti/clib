@@ -1,0 +1,26 @@
+
+.parent{
+  position: relative;
+  width: 200px;
+  padding: 0 4px;
+  border: 2px solid black;
+}
+.childElement {
+  width: max-content;
+  position: absolute;
+  left: 102%;
+  top: 0px;
+}
+
+.menuHeader {
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+  svg {
+    height: 12px;
+    padding-right: 5px;
+  }
+}
+// .hideDiv{
+//   display: none;
+// }
