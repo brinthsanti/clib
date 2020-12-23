@@ -1,0 +1,27 @@
+.flyout_Container {
+    width: 720px;
+    background: #fff;
+    position: fixed;
+    right: 0px;
+    top: 45px;
+    box-shadow: 0 15px 24px 0 rgba(0, 0, 0, 0.1);
+
+    .flyout_Wrapper {
+
+
+        .flyout_Header {
+            display: flex;
+            justify-content: space-between;
+            padding: 4px;
+            border-bottom: 1px solid #e3e3e3;
+        }
+    
+        .flyout_Body {
+            padding: 4px;
+            height: 80vh;
+            overflow-y: scroll;
+        }
+    }
+
+
+}

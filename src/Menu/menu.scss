@@ -3,13 +3,11 @@
   position: relative;
   width: 200px;
   padding: 0 4px;
-  border: 2px solid black;
+  // border: 2px solid black;
 }
 .childElement {
-  width: max-content;
-  position: absolute;
-  left: 102%;
-  top: 0px;
+  left: 12px;
+  position: relative;
 }
 
 .menuHeader {
