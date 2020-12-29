@@ -1,0 +1,42 @@
+.tooltipContainer {
+  .referenceWrapper {
+      position: relative;
+
+
+      //to be removed
+      border: 1px solid black;
+    .tooltip {
+        position: absolute;
+        display: inline-block;
+        background: black;
+        color: white;
+        padding: 5px;
+        top: -36px;
+        left: 37%;
+        .arrow {
+          position: absolute;
+          bottom: -5px;
+          left: 50%;
+          width: 0;
+          height: 0;
+          border-right: 5px solid transparent;
+          border-left: 5px solid transparent;
+          border-top: 5px solid black;
+        }
+
+
+
+      }
+
+      .moveBottom {
+        bottom: -36px;
+        top: unset;
+  }
+
+  .pointDown {
+      transform: rotate(180deg);
+      top: -5px;
+  }
+  }
+
+}
